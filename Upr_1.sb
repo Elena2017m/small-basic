@@ -1,10 +1,66 @@
+While fin_otvet_polzovatelya <> "Да"
 TextWindow.WriteLine( "ВВедите номер первого блюда   ")
 vybor_polzovatelya=TextWindow.ReadNumber()
 nazvanie_pervogo_bluda=0
 czena_pervogo_bluda=0
 If vybor_polzovatelya=1 Then
-  nazvanie_pervogo_bluda=chi
+  nazvanie_pervogo_bluda="chi"
   czena_pervogo_bluda=1.12
   Else
     If vybor_polzovatelya =2 Then
-ghbgkuhb
+      nazvanie_pervogo_bluda="borsch"
+      czena_pervogo_bluda=2.12
+    Else
+      If vybor_polzovatelya =3 Then
+        nazvanie_pervogo_bluda="lapsha"
+        czena_pervogo_bluda=3.12  
+    EndIf
+    EndIf
+    EndIf
+        
+        
+TextWindow.WriteLine( "ВВедите номер второго блюда   ")
+vybor_polzovatelya=TextWindow.ReadNumber()
+nazvanie_vtorogo_bluda=0
+czena_vtorogo_bluda=0        
+If vybor_polzovatelya=1 Then
+  nazvanie_vtorogo_bluda="kartoshka"
+  czena_vtorogo_bluda=1.12
+  Else
+    If vybor_polzovatelya =2 Then
+      nazvanie_vtorogo_bluda="ris"
+      czena_vtorogo_bluda=2.12
+    Else
+      If vybor_polzovatelya =3 Then
+        nazvanie_vtorogo_bluda="grechka"
+        czena_vtorogo_bluda=3.12  
+    EndIf
+    EndIf
+    EndIf
+  
+TextWindow.WriteLine( "ВВедите номер третьего блюда   ")
+vybor_polzovatelya=TextWindow.ReadNumber()
+nazvanie_tretego_bluda=0
+czena_tretego_bluda=0        
+If vybor_polzovatelya=1 Then
+  nazvanie_tretego_bluda="profitrol"
+  czena_tretego_bluda=1.12
+  Else
+    If vybor_polzovatelya =2 Then
+      nazvanie_tretego_bluda="ice-cream"
+      czena_tretego_bluda=2.12
+    Else
+      If vybor_polzovatelya =3 Then
+        nazvanie_tretego_bluda="tort"
+        czena_tretego_bluda=3.12  
+    EndIf
+    EndIf
+    EndIf
+
+obshcaya_stoimost=czena_pervogo_bluda+czena_vtorogo_bluda+czena_tretego_bluda
+TextWindow.WriteLine ( "Вы выбрали   " +  nazvanie_pervogo_bluda + " " + nazvanie_vtorogo_bluda + " "  + nazvanie_tretego_bluda + " " + obshcaya_stoimost)
+TextWindow.WriteLine ( "Вы довольны выбором {Да/Нет}  " )
+fin_otvet_polzovatelya=TextWindow.Read()
+EndWhile
+
+
