@@ -1,0 +1,9 @@
+TextWindow.WriteLine( "ВВедите номер первого блюда   ")
+vybor_polzovatelya=TextWindow.ReadNumber()
+nazvanie_pervogo_bluda=0
+czena_pervogo_bluda=0
+If vybor_polzovatelya=1 Then
+  nazvanie_pervogo_bluda=chi
+  czena_pervogo_bluda=1.12
+  Else
+    If vybor_polzovatelya =2 Then
