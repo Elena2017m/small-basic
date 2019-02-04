@@ -62,5 +62,5 @@ TextWindow.WriteLine ( "Вы выбрали   " +  nazvanie_pervogo_bluda + " " 
 TextWindow.WriteLine ( "Вы довольны выбором {Да/Нет}  " )
 fin_otvet_polzovatelya=TextWindow.Read()
 EndWhile
-
+#
 
