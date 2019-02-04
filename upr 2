@@ -1,22 +1,25 @@
-While fin_otvet_igroka <> "Да"
+While fin_otvet_igroka <> "Нет"
 TextWindow.WriteLine(" Давай поиграем? "  )
-TextWindow.WriteLine(" Компьютер загадал случайное число. Угадайт его.  "  )
+TextWindow .WriteLine(" Компьютер загадал случайное число. Угадай его.  "  )
 TextWindow.WriteLine(" Загадайте число "  )
-vybor_igroka = TextWindow.ReadNumber()
-y = TextWindow.ReadNumber()
-vybor_igroka = y
-x = Math.GetRandomNumber (100)
-vybor_PK =x
+vybor_PK = Math.GetRandomNumber(100)
 
-If x=y Then
+TextWindow.WriteLine ("Это число загадал ПК : " + vybor_PK)
+kolichestvo_popytok=0
+While kolichestvo_popytok <=6 
+vybor_igroka = TextWindow.ReadNumber()
+
+If vybor_PK=vybor_igroka Then
   TextWindow.WriteLine("Выиграл " )
   Else
-If x>y Then
+If vybor_igroka>vybor_PK Then
   TextWindow.WriteLine("Ваше число больше загаданного " )
 Else
   TextWindow.WriteLine("Ваше число меньше загаданного"  )
 EndIf
 EndIf
+kolichestvo_popytok=kolichestvo_popytok+1
+EndWhile
 TextWindow.WriteLine ( "Продолжить игру {Да/Нет}  " )
 fin_otvet_igroka=TextWindow.Read()
 EndWhile
