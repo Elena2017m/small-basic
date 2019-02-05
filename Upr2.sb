@@ -5,8 +5,9 @@ TextWindow.WriteLine(" Загадайте число "  )
 vybor_PK = Math.GetRandomNumber(100)
 
 TextWindow.WriteLine ("Это число загадал ПК : " + vybor_PK)
+
 kolichestvo_popytok=0
-While kolichestvo_popytok <=6 
+While kolichestvo_popytok <6 
 vybor_igroka = TextWindow.ReadNumber()
 
 If vybor_PK=vybor_igroka Then
@@ -20,6 +21,9 @@ EndIf
 EndIf
 kolichestvo_popytok=kolichestvo_popytok+1
 EndWhile
-TextWindow.WriteLine ( "Продолжить игру {Да/Нет}  " )
+
+TextWindow.WriteLine ( "Вы не угадали число, которое загадал ПК..." )
+TextWindow.WriteLine ( "Начать игру сначала? {Да/Нет}  " )
+
 fin_otvet_igroka=TextWindow.Read()
 EndWhile
