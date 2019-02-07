@@ -1,0 +1,15 @@
+TextWindow.WriteLine ("Введите число ворон")
+x=TextWindow.ReadNumber()
+If x=1 Then
+  TextWindow.WriteLine (" На ветке " + x + " ворона ")
+Else
+  If x=2 Or x=3 Or x=4 Then
+    TextWindow.WriteLine (" На ветке " + x + " вороны ")
+Else
+If x=5 Or x=6 Or x=7 Or x=8 Or x=9 Or x=10 Then
+  TextWindow.WriteLine (" На ветке " + x + " ворон ")
+Else
+  TextWindow.WriteLine (" Количество ворон превышает допустимое ")
+EndIf
+EndIf
+EndIf
