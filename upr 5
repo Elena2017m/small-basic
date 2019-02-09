@@ -6,3 +6,11 @@
 '"Else
   '"TextWindow.WriteLine ( "Ваше число является  нечётным")
   '"EndIf
+  '"TextWindow.WriteLine ( "Введите число...")
+'"x=TextWindow.ReadNumber()
+'"y = Math.Remainder(x,4)
+'"If y=0 Then
+  '"TextWindow.WriteLine ( "Ваше число делится на 4")
+'"Else
+  '"TextWindow.WriteLine ( "Ваше число не делится на 4")
+'"EndIf
