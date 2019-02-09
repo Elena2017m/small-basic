@@ -1,0 +1,8 @@
+'"TextWindow.WriteLine ( "Введите число...")
+'"x=TextWindow.ReadNumber()
+'"y = Math.Remainder(x,2)
+'"If y=0 Then
+  '"TextWindow.WriteLine ( "Ваше число является чётным")
+'"Else
+  '"TextWindow.WriteLine ( "Ваше число является  нечётным")
+  '"EndIf
