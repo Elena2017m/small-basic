@@ -14,3 +14,12 @@
 '"Else
   '"TextWindow.WriteLine ( "Ваше число не делится на 4")
 '"EndIf
+TextWindow.WriteLine ( "Введите число...")
+x=TextWindow.ReadNumber()
+y = Math.Remainder(x,7)
+If y=0 Then
+  TextWindow.WriteLine ( "Ваше число делится на 7 без остатка")
+Else
+  TextWindow.WriteLine ( "Ваше число не делится на 7 без остатка")
+  EndIf
+  
