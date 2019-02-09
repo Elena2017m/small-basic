@@ -23,3 +23,13 @@ Else
   TextWindow.WriteLine ( "Ваше число не делится на 7 без остатка")
   EndIf
   
+  TextWindow.WriteLine ( "Введите  1 - ое число...")
+x=TextWindow.ReadNumber()
+TextWindow.WriteLine ( "Введите  2 - ое число...")
+y=TextWindow.ReadNumber()
+z= Math.Remainder(x,y)
+If z=0 Then
+  TextWindow.WriteLine ( "1-ое число делится на 2-ое число без остатка")
+Else
+  TextWindow.WriteLine ( "1-ое число не делится на 2-ое число без остатка")
+EndIf
