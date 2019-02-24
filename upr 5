@@ -33,3 +33,4 @@ If z=0 Then
 Else
   TextWindow.WriteLine ( "1-ое число не делится на 2-ое число без остатка")
 EndIf
+#
