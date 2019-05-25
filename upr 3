@@ -4,4 +4,3 @@ tekuschiy_god=TextWindow.ReadNumber()
 tekuschiy_god=2019
 god_kogda_isponitsya_100_let=(2019-vozrast_polzovatelya)+100
 TextWindow.WriteLine (" Год, когда исполнится сто лет равен"  +" " +god_kogda_isponitsya_100_let)
-#
